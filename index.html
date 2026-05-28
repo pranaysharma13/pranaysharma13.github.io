@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranay Sharma · Notebook</title>
+  <meta name="description" content="Pranay Sharma. Computer Science at Arizona State University. A working notebook of code, ideas, and projects in progress." />
+
+  <!-- Fonts: EB Garamond for the prose, IBM Plex Mono for the labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="at-cover">
+
+  <!-- Section index: a clickable contents rail in the margin (desktop),
+       and a "contents" button that opens the same list (mobile). -->
+  <nav class="index-nav" id="indexNav" aria-label="Section index">
+    <ul class="index-list">
+      <li><a href="#frontispiece" data-target="frontispiece"><span class="ix-name">frontispiece</span><span class="ix-num">i</span></a></li>
+      <li><a href="#preface" data-target="preface"><span class="ix-name">preface</span><span class="ix-num">ii</span></a></li>
+      <li><a href="#curriculum" data-target="curriculum"><span class="ix-name">curriculum</span><span class="ix-num">iii</span></a></li>
+      <li><a href="#experience" data-target="experience"><span class="ix-name">field experience</span><span class="ix-num">iv</span></a></li>
+      <li><a href="#works" data-target="works"><span class="ix-name">selected works</span><span class="ix-num">v</span></a></li>
+      <li><a href="#implements" data-target="implements"><span class="ix-name">implements</span><span class="ix-num">vi</span></a></li>
+      <li><a href="#inquiries" data-target="inquiries"><span class="ix-name">adjacent inquiries</span><span class="ix-num">vii</span></a></li>
+      <li><a href="#colophon" data-target="colophon"><span class="ix-name">colophon</span><span class="ix-num">viii</span></a></li>
+    </ul>
+  </nav>
+  <button class="contents-toggle" id="contentsToggle" aria-label="Open section index" aria-controls="indexNav" aria-expanded="false">
+    <span class="ct-icon" aria-hidden="true"></span>contents
+  </button>
+
+  <main class="book">
+
+    <!-- ────────────────────────────────────────────────────────────
+         I · FRONTISPIECE
+         The cover page. Name. A line beneath it.
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page page--frontispiece" id="frontispiece" data-numeral="i" data-label="frontispiece">
+      <div class="frontispiece-inner">
+        <p class="frontispiece-eyebrow">a working notebook</p>
+
+        <!-- Decorative inked ornament -->
+        <svg class="ornament ornament--cover" viewBox="0 0 140 24" aria-hidden="true">
+          <path d="M2 12 L60 12" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" />
+          <path d="M80 12 L138 12" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" />
+          <path d="M70 4 L70 20 M64 12 L76 12 M66 7 L74 17 M74 7 L66 17" stroke="currentColor" stroke-width="0.6" stroke-linecap="round" opacity="0.8" />
+        </svg>
+
+        <h1 class="frontispiece-name">
+          <span class="name-given">Pranay</span>
+          <span class="name-family">Sharma</span>
+        </h1>
+
+        <p class="frontispiece-line">
+          <em>Computer Science</em> &nbsp;·&nbsp; Arizona State University &nbsp;·&nbsp; Minor in Business
+        </p>
+
+        <p class="frontispiece-meta">Tempe, Arizona &nbsp;·&nbsp; Class of 2027</p>
+
+        <!-- Quiet scroll hint -->
+        <div class="scroll-hint" aria-hidden="true">
+          <span>turn the page</span>
+          <svg viewBox="0 0 16 24" width="12" height="18"><path d="M8 2 L8 22 M2 16 L8 22 L14 16" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" /></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         II · PREFACE  (the about section, in his voice)
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page" id="preface" data-numeral="ii" data-label="preface">
+      <header class="page-head">
+        <p class="page-numeral">ii</p>
+        <h2 class="page-title">Preface</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="spread">
+        <div class="spread-main">
+          <p class="lede"><span class="dropcap">I</span>'m a junior in Computer Science at Arizona State University, with a Minor in Business. I don't just study technology; I leverage it to build meaningful change. I believe every line of code should have a purpose, and every project should push a boundary.</p>
+
+          <p>I thrive where expectations are high and excuses are low, and I look for people sharp enough to challenge me to grow, innovate, and lead. A few years from now I aim to be a polymath: a jack of all trades, master of none, but oftentimes better than a master of one.</p>
+
+          <p>The CS is where I build. The rest is where I think: philosophy, mathematics, astronomy, law, history, physics. This notebook is a record of both.</p>
+        </div>
+
+        <aside class="spread-margin">
+          <p class="margin-note"><span class="margin-mark">✻</span>This page is a working draft of me, not a polished résumé. Read it like a notebook, margins included.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         III · CURRICULUM  (education + coursework)
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page" id="curriculum" data-numeral="iii" data-label="curriculum">
+      <header class="page-head">
+        <p class="page-numeral">iii</p>
+        <h2 class="page-title">Curriculum</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="spread spread--full">
+        <div class="spread-main spread-main--wide">
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Arizona State University</h3>
+              <p class="entry-date">Aug 2023 &ndash; Present</p>
+            </div>
+            <p class="entry-sub"><em>B.S. in Computer Science</em> &nbsp;·&nbsp; Minor in Business &nbsp;·&nbsp; Tempe, AZ</p>
+          </article>
+
+          <p class="section-label">coursework · computer science</p>
+          <ul class="coursework">
+            <li>Data Structures and Algorithms</li>
+            <li>Logic in Computer Science</li>
+            <li>Discrete Mathematical Structures</li>
+            <li>Probability and Statistics</li>
+            <li>Applied Data Analytics</li>
+            <li>Data Analytics with Tableau</li>
+            <li>Theoretical Computer Science</li>
+            <li>Operating Systems</li>
+            <li>Principles of Programming Languages</li>
+            <li>Artificial Intelligence</li>
+            <li>Financial Engineering</li>
+            <li>Computing Ethics</li>
+          </ul>
+
+          <p class="section-label section-label--spaced">coursework · business</p>
+          <ul class="coursework">
+            <li>Macroeconomics</li>
+            <li>Microeconomics</li>
+            <li>Accounting</li>
+            <li>Marketing</li>
+            <li>Management &amp; Strategy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         IV · FIELD EXPERIENCE
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page" id="experience" data-numeral="iv" data-label="field experience">
+      <header class="page-head">
+        <p class="page-numeral">iv</p>
+        <h2 class="page-title">Field experience</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="spread spread--full">
+        <div class="spread-main spread-main--wide">
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Film Equipment Administrative Assistant</h3>
+              <p class="entry-date">Mar 2026 &ndash; Present</p>
+            </div>
+            <p class="entry-sub">HIDA, Arizona State University &nbsp;·&nbsp; Mesa, AZ</p>
+            <ul class="entry-points">
+              <li>Assist with daily film equipment check-in/check-out operations for students and faculty.</li>
+              <li>Manage inventory tracking through barcoding, cataloging, and database maintenance.</li>
+              <li>Lead migration of equipment inventory data to the WebCheckOut platform to support online reservations and management.</li>
+              <li>Configure checkout policies, user workflows, and digital inventory records within WebCheckOut.</li>
+              <li>Maintain accurate equipment records and support inventory audits to improve operational efficiency.</li>
+              <li>Provide customer service and technical support regarding equipment reservations and usage procedures.</li>
+              <li>Collaborate with staff and student workers to streamline equipment room operations and organization.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Undergraduate Student Experience Assistant</h3>
+              <p class="entry-date">Feb 2026 &ndash; Present</p>
+            </div>
+            <p class="entry-sub">International Students &amp; Scholars Center (ISSC) &nbsp;·&nbsp; Tempe, AZ</p>
+            <ul class="entry-points">
+              <li>Plan and execute engagement events and workshops supporting 13,000+ international students at ASU.</li>
+              <li>Plan and implement cultural, academic, and community-building events in collaboration with program coordinators.</li>
+              <li>Lead presentations, workshops, and student support initiatives with minimal supervision.</li>
+              <li>Manage event logistics, registrations, and promotional outreach.</li>
+              <li>Serve as a liaison between ISSC, student organizations and campus departments to enhance programming.</li>
+              <li>Collect and analyze engagement data to assess program effectiveness and improve future initiatives.</li>
+              <li>Support integration efforts for new international students.</li>
+              <li>Demonstrate strong cross-cultural communication, leadership, and organizational skills.</li>
+              <li>Maintain professionalism, cultural sensitivity, and confidentiality while representing ISSC.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Section Leader</h3>
+              <p class="entry-date">Aug 2024 &ndash; Dec 2024</p>
+            </div>
+            <p class="entry-sub">Ira A. Fulton Schools of Engineering &nbsp;·&nbsp; Tempe, AZ</p>
+            <ul class="entry-points">
+              <li>ASU 101 Section Leader for a class of 19 students under Professor Steven Osburn.</li>
+              <li>Delivered engaging lectures, organized a library tour, evaluated assignments, and facilitated one-to-one student mentoring.</li>
+              <li>Provided academic guidance and connected students with institutional resources to support their transition to university life.</li>
+              <li>Coordinated communication between the professor and department, including class updates and attendance reporting.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Software Engineering Fellow</h3>
+              <p class="entry-date">Jul 2024 &ndash; Aug 2024</p>
+            </div>
+            <p class="entry-sub">Headstarter AI &nbsp;·&nbsp; Remote</p>
+            <ul class="entry-points">
+              <li>Worked towards the Track A objective of accumulating 1000 waitlist users, creating 1000 user accounts, or generating revenue exceeding $1000 through innovative AI projects.</li>
+              <li>Engaged in extensive networking with industry professionals and peers to enhance collaboration and learning.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Student Member, FACE</h3>
+              <p class="entry-date">Aug 2023 &ndash; May 2024</p>
+            </div>
+            <p class="entry-sub">Fulton Accelerated Community Engagement (FACE) &nbsp;·&nbsp; Tempe, AZ</p>
+            <ul class="entry-points">
+              <li>Identified, explored and applied my top five Clifton Strengths.</li>
+              <li>Conducted interviews with a Fulton leader to gather experiential insights and researched on Diversity, Equity, and Inclusion.</li>
+              <li>Participated in Fulton Student Organization meetings and documented them using a qualitative observation approach.</li>
+              <li>Developed a SMART goal and collaborated on a project addressing groundwater depletion in California's Central Valley.</li>
+              <li>Presented my yearlong work at the FACE symposium to the engineering faculty.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         V · SELECTED WORKS  (projects, as small case studies)
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page" id="works" data-numeral="v" data-label="selected works">
+      <header class="page-head">
+        <p class="page-numeral">v</p>
+        <h2 class="page-title">Selected works</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="works">
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 01</p>
+            <p class="work-tools">Tableau</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Data Analysis for Sustainability</h3>
+            <ul class="entry-points">
+              <li>Worked on real-world energy data in collaboration with Intel Corporation's Sustainability Team.</li>
+              <li>Built interactive dashboards in Tableau using calculated fields, parameters, filters, and dual-axis charts.</li>
+              <li>Analyzed KPIs such as Net Energy Production, Renewable Energy Share, and Hourly Generation Changes.</li>
+              <li>Recommended optimal U.S. region for Intel's new data center based on multi-factor energy analysis.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 02</p>
+            <p class="work-tools">Microsoft Excel</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Grammys Website Audience Analysis</h3>
+            <ul class="entry-points">
+              <li>Prepared real data provided by The Recording Academy by transforming it.</li>
+              <li>Calculated Key Business Performance Indicators (KPIs) and provided recommendations to the organization.</li>
+              <li>Project aligns with United Nations SDG 9: Industry, Innovation, and Infrastructure.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 03</p>
+            <p class="work-tools">Dart · Flutter</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Audible ASU Maps for Wayfinding</h3>
+            <ul class="entry-points">
+              <li>Developed a cross-platform audio input/output enabled navigation app using Dart and Flutter, to assist visually impaired students at ASU, under the guidance of Dr. Jared Schoepf.</li>
+              <li>The app features live location tracking, building detection of up to 35 m radius, walking ETA, and waypoint polyline graphs.</li>
+              <li>The team presented this project to a jury and were appreciated for the work.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         VI · IMPLEMENTS  (skills / tools)
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page" id="implements" data-numeral="vi" data-label="implements">
+      <header class="page-head">
+        <p class="page-numeral">vi</p>
+        <h2 class="page-title">Implements</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="implements">
+
+        <div class="implement-group">
+          <p class="implement-label">Languages</p>
+          <ul class="implement-list">
+            <li>Python</li><li>SQL (MySQL)</li><li>Java</li><li>C / C++</li><li>Prolog</li><li>MATLAB</li><li>Scheme</li><li>Dart</li>
+          </ul>
+        </div>
+
+        <div class="implement-group">
+          <p class="implement-label">Frameworks</p>
+          <ul class="implement-list">
+            <li>Django</li><li>Flutter</li>
+          </ul>
+        </div>
+
+        <div class="implement-group">
+          <p class="implement-label">Developer tools</p>
+          <ul class="implement-list">
+            <li>Git</li><li>VS Code</li><li>PyCharm</li><li>IntelliJ IDEA</li><li>Tableau</li><li>MS Office</li>
+          </ul>
+        </div>
+
+        <div class="implement-group">
+          <p class="implement-label">Soft skills</p>
+          <ul class="implement-list">
+            <li>Leadership</li><li>Management</li><li>Mentoring</li><li>Public speaking</li><li>Event planning</li><li>Technical writing</li><li>Research</li><li>Data analysis</li><li>Cross-cultural communication</li><li>Communication</li><li>Social media management</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         VII · ADJACENT INQUIRIES  (the constellation of interests)
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page" id="inquiries" data-numeral="vii" data-label="adjacent inquiries">
+      <header class="page-head">
+        <p class="page-numeral">vii</p>
+        <h2 class="page-title">Adjacent inquiries</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="inquiries-intro">
+        <p>A few years from now I aim to be a polymath. These are the fields I read into when the IDE is closed. Hover or tap any star.</p>
+      </div>
+
+      <!-- The constellation. SVG nodes are interactive; lines connect them as a "Pranay" constellation. -->
+      <div class="constellation-wrap">
+        <svg class="constellation" viewBox="0 0 700 420" role="img" aria-label="A constellation diagram of Pranay's interests connected by faint lines.">
+
+          <!-- background "field" subtle dots, decorative -->
+          <g class="bg-stars" aria-hidden="true">
+            <circle cx="60" cy="40" r="0.7" />
+            <circle cx="160" cy="80" r="0.5" />
+            <circle cx="640" cy="60" r="0.6" />
+            <circle cx="540" cy="380" r="0.5" />
+            <circle cx="80" cy="360" r="0.6" />
+            <circle cx="370" cy="20" r="0.5" />
+            <circle cx="20" cy="200" r="0.5" />
+            <circle cx="680" cy="220" r="0.7" />
+            <circle cx="300" cy="400" r="0.5" />
+            <circle cx="420" cy="60" r="0.5" />
+            <circle cx="200" cy="240" r="0.5" />
+            <circle cx="500" cy="200" r="0.6" />
+          </g>
+
+          <!-- Constellation lines, drawn first so stars sit on top -->
+          <g class="lines">
+            <line x1="350" y1="210" x2="190" y2="120" data-link="cs philosophy" />
+            <line x1="350" y1="210" x2="500" y2="120" data-link="cs mathematics" />
+            <line x1="350" y1="210" x2="560" y2="240" data-link="cs astronomy" />
+            <line x1="350" y1="210" x2="450" y2="340" data-link="cs physics" />
+            <line x1="350" y1="210" x2="230" y2="330" data-link="cs history" />
+            <line x1="350" y1="210" x2="120" y2="240" data-link="cs law" />
+            <line x1="500" y1="120" x2="560" y2="240" data-link="mathematics astronomy" />
+            <line x1="560" y1="240" x2="450" y2="340" data-link="astronomy physics" />
+            <line x1="190" y1="120" x2="120" y2="240" data-link="philosophy law" />
+            <line x1="120" y1="240" x2="230" y2="330" data-link="law history" />
+          </g>
+
+          <!-- Stars (interactive). Center star = CS. -->
+          <g class="stars">
+            <g class="star star--center" data-id="cs" tabindex="0" role="button" aria-label="Computer Science, the centre">
+              <circle cx="350" cy="210" r="5.5" />
+              <circle cx="350" cy="210" r="11" class="halo" />
+              <text x="350" y="195" text-anchor="middle">Computer Science</text>
+            </g>
+
+            <g class="star" data-id="philosophy" tabindex="0" role="button" aria-label="Philosophy">
+              <circle cx="190" cy="120" r="3.5" />
+              <text x="190" y="105">Philosophy</text>
+            </g>
+
+            <g class="star" data-id="mathematics" tabindex="0" role="button" aria-label="Mathematics">
+              <circle cx="500" cy="120" r="3.5" />
+              <text x="500" y="105">Mathematics</text>
+            </g>
+
+            <g class="star" data-id="astronomy" tabindex="0" role="button" aria-label="Astronomy">
+              <circle cx="560" cy="240" r="3.5" />
+              <text x="560" y="225">Astronomy</text>
+            </g>
+
+            <g class="star" data-id="physics" tabindex="0" role="button" aria-label="Physics">
+              <circle cx="450" cy="340" r="3.5" />
+              <text x="450" y="360">Physics</text>
+            </g>
+
+            <g class="star" data-id="history" tabindex="0" role="button" aria-label="History">
+              <circle cx="230" cy="330" r="3.5" />
+              <text x="230" y="350">History</text>
+            </g>
+
+            <g class="star" data-id="law" tabindex="0" role="button" aria-label="Law">
+              <circle cx="120" cy="240" r="3.5" />
+              <text x="120" y="225">Law</text>
+            </g>
+          </g>
+        </svg>
+
+        <!-- The hovered star's "note" appears here -->
+        <div class="star-note" id="starNote">
+          <p class="star-note-title">hover or tap a star</p>
+          <p class="star-note-body">Each one is a field I keep returning to. They're not on my résumé, but they shape every project on it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ────────────────────────────────────────────────────────────
+         VIII · COLOPHON  (contact / closing)
+         ──────────────────────────────────────────────────────────── -->
+    <section class="page page--colophon" id="colophon" data-numeral="viii" data-label="colophon">
+      <header class="page-head">
+        <p class="page-numeral">viii</p>
+        <h2 class="page-title">Colophon</h2>
+        <div class="page-rule"></div>
+      </header>
+
+      <div class="colophon-grid">
+        <div>
+          <p class="colophon-label">To reach me</p>
+          <ul class="colophon-contact">
+            <li><span class="contact-key">email</span><a href="mailto:pshar147@asu.edu">pshar147@asu.edu</a></li>
+            <li><span class="contact-key">phone</span><a href="tel:+16023847327">+1 (602) 384‑7327</a></li>
+            <li><span class="contact-key">linkedin</span><a href="https://linkedin.com/in/pranaysharma13" target="_blank" rel="noopener">/in/pranaysharma13</a></li>
+            <li><span class="contact-key">résumé</span><a href="assets/resume.pdf" target="_blank" rel="noopener">download PDF</a></li>
+          </ul>
+        </div>
+
+        <div class="colophon-note">
+          <p>This notebook is set in <em>EB Garamond</em>, with labels and dates in <em>IBM Plex Mono</em>. Built by hand in HTML, CSS, and JavaScript. No frameworks, by design.</p>
+          <p class="colophon-sign">- P.S.</p>
+        </div>
+      </div>
+
+      <p class="copyright">© <span id="year"></span> Pranay Sharma. Looking to connect with builders, thinkers, and people who set the trend rather than follow it.</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
