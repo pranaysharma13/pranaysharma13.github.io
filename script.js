@@ -40,6 +40,11 @@
   /* ── 3. Section index: highlight current section + jump links ── */
 
   function setActive(id) {
+    // Sections without a matching index link (e.g. the epigraph) are front
+    // matter — leave the previous state alone so the nav stays hushed through them.
+    const hasLink = Array.from(indexLinks).some((a) => a.dataset.target === id);
+    if (!hasLink) return;
+
     indexLinks.forEach((a) => {
       a.classList.toggle('is-active', a.dataset.target === id);
     });

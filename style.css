@@ -359,6 +359,46 @@ body:not(.at-cover) .index-nav {
 
 
 /* ═══════════════════════════════════════════════════════════════
+   5b. Epigraph · the quote between cover and preface
+   ═══════════════════════════════════════════════════════════════ */
+
+.page--epigraph {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.epigraph {
+  margin: 0;
+  max-width: 30rem;
+  padding: 0 1.5rem;
+}
+
+.epigraph-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0 0 1.5rem;
+  letter-spacing: 0.005em;
+}
+
+.epigraph-author {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: lowercase;
+  color: var(--ink-whisper);
+  margin: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
    6. Page head · section openers
    ═══════════════════════════════════════════════════════════════ */
 
