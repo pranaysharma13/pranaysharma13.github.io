@@ -978,7 +978,7 @@ body:not(.at-cover) .index-nav {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 1.1rem;
+  margin-top: 1.75rem;
 }
 .work-link {
   color: var(--walnut);
@@ -992,5 +992,5 @@ body:not(.at-cover) .index-nav {
 
 @media (max-width: 880px) {
   .work-meta { flex-wrap: wrap; }
-  .work-links { flex-direction: row; gap: 1.25rem; margin-top: 0; }
+  .work-links { flex-direction: row; gap: 1.25rem; margin-top: 0.5; }
 }
