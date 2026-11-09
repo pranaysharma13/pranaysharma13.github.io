@@ -267,6 +267,75 @@
         <article class="work">
           <div class="work-meta">
             <p class="work-no">№ 01</p>
+            <p class="work-tools">React · TypeScript · Supabase · Vercel</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">BigOwl</h3>
+            <ul class="entry-points">
+              <li>Built and launched a free, open-source web app that teaches data structures and algorithms through step-by-step visualizers, covering 63 topics from CLRS plus 21 coding-interview patterns.</li>
+              <li>Designed a “predict mode” that pauses each algorithm at its decision points and scores the learner’s predictions, alongside quizzes, practice drills and timed mock assessments.</li>
+              <li>Engineered local-first progress tracking that needs no sign-up, with optional magic-link accounts synced through Supabase and protected by row-level security.</li>
+              <li>Secured and tested the app with 120 automated tests, CI on every pull request and a documented security review, with no trackers or third-party scripts.</li>
+              <li>Ran an AI-assisted workflow, using the Claude desktop app to plan and review and Claude Code to implement, with every change shipped through reviewed pull requests.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 02</p>
+            <p class="work-tools">Python · ClaudeAPI · SpacetimeDB · Next.js</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Clerk: AI Accounts Payable Agent</h3>
+            <ul class="entry-points">
+              <li>Built an AI agent with a team of three at Cal Hacks 13.0 that checks supplier invoices against quotes, POs and email threads.</li>
+              <li>Developed the Python core: document intake, Claude extraction with cited evidence, deterministic invoice checks and payments.</li>
+              <li>Designed safeguards so the AI can never approve or pay: role limits, version-bound approvals and a full audit trail.</li>
+              <li>Integrated Capital One Nessie, CRS, Gmail and Cartesia APIs, with exactly-once payments that survive a dropped connection.</li>
+              <li>Caught 28/28 expected invoice issues with zero false alarms across 18 graded scenarios, backed by 300+ automated tests.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 03</p>
+            <p class="work-tools">Python · Machine Learning · FinTech</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Stock Movement Predictor</h3>
+            <ul class="entry-points">
+              <li>Tested whether 20 years of daily prices can predict tomorrow's direction and move size for SPY, NVIDIA, Apple and Google.</li>
+              <li>Compared logistic regression, gradient boosting and a PyTorch LSTM with year-by-year walk-forward tests from 2010 to 2026.</li>
+              <li>Found direction unpredictable, but the LSTM beat a strong volatility rule by 2.6–3.7 points on three stocks it hadn't seen.</li>
+              <li>Validated results with paired tests, Holm correction, luck checks and 184 automated tests, including leakage tests.</li>
+              <li>Built a live forward test on GitHub Actions that commits each day's predictions before the market opens.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 04</p>
+            <p class="work-tools">Python · NumPy · SciPy · pandas</p>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Premier League 2026-27 Prediction Model</h3>
+            <ul class="entry-points">
+              <li>Built a Premier League 2026-27 prediction model from scratch in Python: a Dixon-Coles bivariate Poisson model fitted by weighted maximum likelihood, with a hand-derived analytic gradient checked against numerical differentiation.</li>
+              <li>Fitted the Premier League and Championship jointly, so promoted clubs get real priors. Added a mixed Poisson/Gamma likelihood that uses expected goals (xG) where available and actual goals elsewhere.</li>
+              <li>Ran a Monte Carlo season simulator (20,000 runs over 40 bootstrap refits) to produce title, top-4 and relegation odds and a finishing-position distribution for every club.</li>
+              <li>Validated it with walk-forward backtests scored by Ranked Probability Score against bookmaker closing odds. Fitting on xG beat goals-only in all three test seasons. Blending with the market gave a fitted weight of zero, and I published that result.</li>
+              <li>Found that season projections were overconfident (68.6% of clubs landed inside an 80% interval), tested two explanations that failed, and shipped a calibrated 1.5x widening that the site labels as an unexplained correction.</li>
+              <li>Shipped a static dashboard on GitHub Pages (vanilla JavaScript, SVG, Three.js): a finishing-position heatmap, points ranges, an in-browser fixture predictor, and the backtest and calibration evidence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-meta">
+            <p class="work-no">№ 05</p>
             <p class="work-tools">Tableau</p>
           </div>
           <div class="work-body">
@@ -282,7 +351,7 @@
 
         <article class="work">
           <div class="work-meta">
-            <p class="work-no">№ 02</p>
+            <p class="work-no">№ 06</p>
             <p class="work-tools">Microsoft Excel</p>
           </div>
           <div class="work-body">
@@ -297,7 +366,7 @@
 
         <article class="work">
           <div class="work-meta">
-            <p class="work-no">№ 03</p>
+            <p class="work-no">№ 07</p>
             <p class="work-tools">Dart · Flutter</p>
           </div>
           <div class="work-body">
